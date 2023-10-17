@@ -19,3 +19,4 @@ This is a simple practice project aimed at creating a basic Flutter counter app 
 if u are in state that u are using the BlocListener and the BlocBuilder u can the BlocConsumer it will replace the BlocListener and BlocBuilder it will have an attribute called listener and builder.
 In the context of Counter App, we have a `CounterCubit` which is responsible for managing our counter state and logic.
 BLoC (Business Logic Component) is a design pattern used in combination with the flutter framework to manage and handle state changes for widgets.
+Using the extension to replace this line of the code: BlocProvider.of<CounterCubit>(context).decrement(); with this one: context.read<CounterCubit>().decrement();
